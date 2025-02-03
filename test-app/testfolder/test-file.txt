@@ -1,0 +1,3 @@
+QT - AWS Test file
+
+File format: .txt
