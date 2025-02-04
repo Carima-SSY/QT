@@ -79,21 +79,18 @@
 4. Project Build and Exec
     * Build Directory 생성
         <detail>
-        <summary>Create and Move Build Dir</summary>
 
             mkdir build
             cd build
         </detail>
     * CMake 실행
         <detail>
-        <summary>Exec CMake</summary>
 
             cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt)
             cmake --build .
         </detail>
     * App 실행
         <detail>
-        <summary>Exec App</summary>
 
             ./MyQtApp
         </detail>
