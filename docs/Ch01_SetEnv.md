@@ -41,6 +41,7 @@
     * 파일명은 무조건 동일해야 함
     * 해당 파일 내 입력 내용:
     <details>
+    <summary>In main.cpp</summary>
         cmake_minimum_required(VERSION 3.16)
         project(MyQtApp)
 
