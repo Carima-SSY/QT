@@ -42,7 +42,7 @@
     * C/C++ (Microsoft)
         <detail> 
         
-        <img src="./C_CPP.png"> 
+        <img src="./C_CPP.png"> <br>
         <img src="./C_CPP_Extension.png"> 
         </detail>
     * CMake Tools
