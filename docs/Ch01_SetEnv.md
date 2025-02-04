@@ -31,7 +31,7 @@
     * Qt VSCode Tools (Qt 관련 지원 추가)
     * CodeLLDB (디버깅 지원)
 
-## Start QT Project 
+## Setting QT Project 
 1. Project Directory 생성 및 이동
     * 예시(터미널 명령어): 
         1. "mkdir ~/QtProjects/MyApp"
@@ -95,4 +95,75 @@
             ./MyQtApp
         </detail>
 
+5. Set CMake Build in VS Code
+    * .vscode 폴더 생성 후 아래 3가지 파일 추가 
+    * .vscode/setting.json
+        <detail>
 
+            {
+                "cmake.configureSettings": {
+                    "CMAKE_PREFIX_PATH": "/opt/homebrew/opt/qt"
+                },
+                "cmake.generator": "Ninja"
+            }
+        </detail>
+    * .vscode/launch.json
+        <detail>
+
+            {
+                "version": "0.2.0",
+                "configurations": [
+                    {
+                        "name": "Launch Qt App",
+                        "type": "lldb",
+                        "request": "launch",
+                        "program": "${workspaceFolder}/build/MyQtApp",
+                        "args": [],
+                        "cwd": "${workspaceFolder}",
+                        "environment": [],
+                        "externalConsole": false,
+                        "MIMode": "lldb"
+                    }
+                ]
+            }
+        </detail>
+    * .vscode/task.json
+        <detail>
+
+            {
+                "version": "2.0.0",
+                "tasks": [
+                    {
+                        "label": "Build Qt App",
+                        "type": "shell",
+                        "command": "cmake --build build",
+                        "problemMatcher": [],
+                        "group": {
+                            "kind": "build",
+                            "isDefault": true
+                        }
+                    }
+                ]
+            }
+        </detail>
+
+
+7. Structure of QT App's Directory
+    <detail>
+    
+        QtProjects/
+        └── MyApp/                 # 프로젝트 루트 폴더
+            ├── build/             # CMake 빌드 디렉토리 (빌드 후 생성됨)
+            ├── src/               # 소스 코드 디렉토리
+            │   ├── main.cpp       # 메인 실행 파일 (Qt 애플리케이션 코드)
+            │   ├── MyWindow.h     # (옵션) 커스텀 윈도우 헤더 파일
+            │   ├── MyWindow.cpp   # (옵션) 커스텀 윈도우 구현 파일
+            ├── CMakeLists.txt     # CMake 빌드 설정 파일
+            ├── .vscode/           # VS Code 설정 폴더
+            │   ├── settings.json  # VS Code CMake 설정 파일
+            │   ├── launch.json    # 디버깅 설정 파일
+            │   ├── tasks.json     # 빌드 작업 설정 파일
+            ├── CMakePresets.json  # (선택) CMake 프리셋 설정
+            ├── README.md          # 프로젝트 설명 파일
+
+    </detail>
