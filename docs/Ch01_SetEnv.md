@@ -22,6 +22,7 @@
     * 설치 방법 
         - 해당 명령어 순서대로 입력:
             <detail>
+            
                 brew install qt cmake ninja
                 brew install llvm"  # 최신 clang 컴파일러 설치 (선택 사항)
             </detail>
@@ -30,6 +31,7 @@
         - 해당 명령어 각각 입력하여 설치된 버전명이 표기되는지 확인
         - 명령어:
             <detail>
+
                 clang --version
                 cmake --version
             </detail>
