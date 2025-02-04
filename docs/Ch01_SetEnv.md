@@ -32,4 +32,15 @@
     * CodeLLDB (디버깅 지원)
 
 ## Start QT Project 
+1. Project Directory 생성 및 이동
+    * 예시(터미널 명령어): 
+        1. "mkdir ~/QtProjects/MyApp"
+        2. "cd ~/QtProjects/MyApp"
+
+2. CMakeLists.txt 파일 생성 및 내용 입력
+    * 파일명은 무조건 동일해야 함
+    * 해당 파일 내 입력 내용:
+    <img src="./CMakeLists_입력내용.png">
+        
+
 

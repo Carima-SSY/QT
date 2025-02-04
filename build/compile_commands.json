@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/carima/Documents/Programming/QT/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -isystem /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/opt/qt/lib -isystem /opt/homebrew/opt/qt/lib/QtCore.framework/Headers -isystem /opt/homebrew/opt/qt/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/opt/qt/include -isystem /opt/homebrew/opt/qt/lib/QtGui.framework/Headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -o CMakeFiles/MyQtApp.dir/src/main.cpp.o -c /Users/carima/Documents/Programming/QT/setting-app/src/main.cpp",
+  "file": "/Users/carima/Documents/Programming/QT/setting-app/src/main.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/src/main.cpp.o"
+}
+]
