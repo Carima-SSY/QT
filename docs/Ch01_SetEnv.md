@@ -42,12 +42,24 @@
     * C/C++ (Microsoft)
         <detail> 
         
-        <img src="./CMakeLists_입력내용.png"> 
+        <img src="./C_CPP.png"> 
+        <img src="./C_CPP_Extension.png"> 
         </detail>
     * CMake Tools
+        <detail> 
+        
+        <img src="./CMake.png"> 
+        </detail>
     * Qt VSCode Tools (Qt 관련 지원 추가)
+        <detail> 
+        
+        <img src="./QT_VSCode_Tools.png"> 
+        </detail>
     * CodeLLDB (디버깅 지원)
-
+        <detail> 
+        
+        <img src="./CodeLLDB.png"> 
+        </detail>
 ## Setting QT Project 
 1. Project Directory 생성 및 이동
     * 예시(터미널 명령어): 
