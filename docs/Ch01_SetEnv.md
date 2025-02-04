@@ -40,6 +40,7 @@
 ## Setting VS Code
 1. Extension Program 설치
     * C/C++ (Microsoft)
+        <detail> <img src="./CMakeLists_입력내용.png"> </detail>
     * CMake Tools
     * Qt VSCode Tools (Qt 관련 지원 추가)
     * CodeLLDB (디버깅 지원)
