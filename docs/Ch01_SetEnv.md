@@ -61,7 +61,6 @@
     * 파일명 동일하게 권장 (변경 시 다른 파일 내 일부 내용 수정 필요)
     * 해당 파일 내 입력 내용:
         <details>
-        <summary>In main.cpp</summary>
 
             #include <QApplication>
             #include <QLabel>
@@ -147,10 +146,18 @@
             }
         </detail>
 
+6. Build and Exec
+    * CMake Build
+        1. CMake: Configure 명령어 실행
+            + Cmd + Shift + P 입력 후 -> CMake: Configure 입력 
+        2. CMake: Build 명령어 실행
+            + Cmd + Shift + P 입력 후 -> CMake: Build 입력 
+    * Debug
+        - Run Menu > Launch Qt App 선택 후 실행
 
 7. Structure of QT App's Directory
     <detail>
-    
+
         QtProjects/
         └── MyApp/                 # 프로젝트 루트 폴더
             ├── build/             # CMake 빌드 디렉토리 (빌드 후 생성됨)
@@ -167,3 +174,21 @@
             ├── README.md          # 프로젝트 설명 파일
 
     </detail>
+
+    * 폴더 및 파일 설명
+        1. build/
+            + cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt) 실행 후 생성됨
+            + 빌드된 바이너리 및 중간 파일 포함
+        2. src/
+            + C++ 및 Qt 관련 소스 코드 저장
+            + main.cpp: Qt 애플리케이션의 시작점
+            + MyWindow.h, MyWindow.cpp: (선택 사항) Qt 창 클래스 구현
+        3. CMakeLists.txt
+            + CMake 프로젝트 설정 파일 (Qt 라이브러리 연결 포함)
+        4. .vscode/
+            + VS Code 전용 설정 (CMake 및 디버깅 지원)
+            + settings.json: Qt 경로 지정
+            + launch.json: 디버그 설정
+            + tasks.json: 빌드 자동화
+        5. README.md
+            + 프로젝트 설명 파일 (설치 방법, 빌드 방법 등 기록)
