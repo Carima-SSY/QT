@@ -40,23 +40,23 @@
 2. CMakeLists.txt 파일 생성 및 내용 입력
     * 파일명은 무조건 동일해야 함
     * 해당 파일 내 입력 내용:
-    <details>
-    <summary>In main.cpp</summary>
+        <details>
+        <summary>In main.cpp</summary>
 
-        cmake_minimum_required(VERSION 3.16)
-        project(MyQtApp)
+            cmake_minimum_required(VERSION 3.16)
+            project(MyQtApp)
 
-        //Qt 설치 경로 확인
-        set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")
+            //Qt 설치 경로 확인
+            set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")
 
-        //Qt 패키지 찾기
-        find_package(Qt6 REQUIRED COMPONENTS Widgets)
+            //Qt 패키지 찾기
+            find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-        add_executable(MyQtApp main.cpp)
+            add_executable(MyQtApp main.cpp)
 
-        //Qt 라이브러리 연결
-        target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
-    </details>
+            //Qt 라이브러리 연결
+            target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
+        </details>
         
 
 
