@@ -41,7 +41,7 @@
     * 파일명은 무조건 동일해야 함
     * 해당 파일 내 입력 내용:
         <details>
-        <summary>In main.cpp</summary>
+        <summary>In CMakeLists.txt</summary>
 
             cmake_minimum_required(VERSION 3.16)
             project(MyQtApp)
@@ -57,6 +57,45 @@
             //Qt 라이브러리 연결
             target_link_libraries(MyQtApp PRIVATE Qt6::Widgets)
         </details>
-        
+3. QT Applcation Code (main.cpp) 파일 생성 및 내용 입력 
+    * 파일명 동일하게 권장 (변경 시 다른 파일 내 일부 내용 수정 필요)
+    * 해당 파일 내 입력 내용:
+        <details>
+        <summary>In main.cpp</summary>
+
+            #include <QApplication>
+            #include <QLabel>
+
+            int main(int argc, char *argv[]) {
+                QApplication app(argc, argv);
+
+                QLabel label("Hello, Qt on macOS with VS Code!");
+                label.show();
+
+                return app.exec();
+            }
+        </details>
+
+4. Project Build and Exec
+    * Build Directory 생성
+        <detail>
+        <summary>Create and Move Build Dir</summary>
+
+            mkdir build
+            cd build
+        </detail>
+    * CMake 실행
+        <detail>
+        <summary>Exec CMake</summary>
+
+            cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt)
+            cmake --build .
+        </detail>
+    * App 실행
+        <detail>
+        <summary>Exec App</summary>
+
+            ./MyQtApp
+        </detail>
 
 
