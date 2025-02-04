@@ -155,6 +155,10 @@
     * Debug
         - Run Menu > Launch Qt App 선택 후 실행
 
+    * (해결 필요) 해당 기능에 대하여 명확히 확인 못함
+        - CMake 빌드까지는 확인하였으나, 디버그 기능에 대해서는 확인 못 함
+        - Run > Launch Qt App 버튼이 보이지 않음
+
 7. Structure of QT App's Directory
     <detail>
 
