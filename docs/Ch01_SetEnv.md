@@ -22,7 +22,7 @@
     * 설치 방법 
         - 해당 명령어 순서대로 입력:
             <detail>
-            
+
                 brew install qt cmake ninja
                 brew install llvm"  # 최신 clang 컴파일러 설치 (선택 사항)
             </detail>
@@ -57,7 +57,6 @@
     * 파일명은 무조건 동일해야 함
     * 해당 파일 내 입력 내용:
         <details>
-        <summary>In CMakeLists.txt</summary>
 
             cmake_minimum_required(VERSION 3.16)
             project(MyQtApp)
