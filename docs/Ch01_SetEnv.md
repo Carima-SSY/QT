@@ -40,7 +40,7 @@
 2. CMakeLists.txt 파일 생성 및 내용 입력
     * 파일명은 무조건 동일해야 함
     * 해당 파일 내 입력 내용:
-    <img src="./CMakeLists_입력내용.png">
+        <img src="./CMakeLists_입력내용.png">
         
 
 
